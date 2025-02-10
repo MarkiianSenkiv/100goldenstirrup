@@ -1,0 +1,296 @@
+.intro {
+  background-image: url(/img/linear.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: -150px;
+  .intro__background {
+    background: rgba(0, 0, 0, 0.93);
+    .intro__container {
+      min-height: 105vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .intro__ctg-left {
+        display: flex;
+        flex-direction: column;
+        .intro__name {
+          font-family: "MyriadPro-Bold";
+          font-size: 50px;
+
+          color: #f5c109;
+        }
+        .intro__destitle {
+          font-size: 20px;
+          color: #f5f5f5;
+          padding-bottom: 70px;
+        }
+        .intro__buttons {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  padding: 20px 0;
+  .about__des {
+    display: flex;
+  }
+  .about__ctg {
+    .about__title {
+      background-color: #f5f5f5;
+      font-size: 30px;
+      font-family: "MyriadPro-Bold", serif;
+      text-decoration: underline;
+      color: #f5c109;
+      padding-bottom: 10px;
+    }
+    .about__destitle {
+      font-size: 19px;
+      padding-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .about__container {
+      display: flex;
+      flex: 1, 1, 50%;
+      gap: 10px;
+      .about__ctg {
+        align-items: center;
+
+        .about__title {
+          font-size: 35px;
+        }
+        .about__destitle {
+          font-size: 22px;
+        }
+      }
+    }
+    .about__portret {
+      width: 250px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .about__portret {
+      width: auto;
+      height: 350px;
+    }
+  }
+
+  .about__portret {
+    border-radius: 7%;
+    padding: 20px 0;
+  }
+  .about__portret:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.authors {
+  background-color: #222222;
+  padding: 20px 0px;
+
+  .authors__title {
+    font-size: 27px;
+    font-family: "MyriadPro-Bold";
+    text-decoration: underline;
+    color: #f5c109;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .authors__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+
+    .authors__container > div {
+      width: 500px;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .authors__container > div:nth-child(5) {
+      grid-column: span 2;
+    }
+
+    .authors__avart {
+      background-color: #35352f;
+      border-radius: 7%;
+      padding: 10px 0;
+
+      .authors__img {
+        border-radius: 12%;
+        object-fit: cover;
+        padding: 0 10px 10px 10px;
+      }
+      .authors__name {
+        font-size: 20px;
+        font-family: "MyriadPro-Bold";
+        color: #f5c109;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .authors__wire {
+        font-size: 16px;
+        color: #f5f5f5;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .authors__container {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+.details {
+  padding: 20px 0px;
+  .details__title {
+    font-size: 27px;
+    font-family: "MyriadPro-Bold";
+    text-decoration: underline;
+    color: #f5c109;
+    text-align: center;
+  }
+  .details__con-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    .details__left {
+      flex: 1 1 100%;
+      max-width: 100%;
+      .details__categories {
+        background-color: #222222;
+        border-radius: 20px;
+        padding: 20px;
+        .details__categories-title {
+          font-size: 22px;
+          font-weight: 600;
+          color: #f5c109;
+          padding-bottom: 20px;
+        }
+        .details__categories-desctrtion {
+          font-family: "MyriadPro-Regular";
+          color: white;
+          font-size: 16px;
+        }
+      }
+    }
+    .details__right {
+      flex: 1 1 100%;
+      max-width: 100%;
+      .details__row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        .details__item {
+          margin-bottom: 30px;
+          .details__thumb {
+            position: relative;
+            .details__img {
+              border-top-right-radius: 20px;
+              border-top-left-radius: 20px;
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+            }
+          }
+          .details__down-content {
+            background-color: #222222;
+            padding: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            .details__down-title {
+              font-size: 18px;
+              font-weight: 600;
+              color: #f5c109;
+            }
+            .details__down-decstitle {
+              font-size: 16px;
+              font-weight: 400;
+              color: white;
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .details__row {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .details__con-row {
+      flex-direction: row;
+      .details__left {
+        flex: 1 1 30%;
+        max-width: 30%;
+      }
+      .details__right {
+        flex: 1 1 70%;
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+.pravul {
+  .pravul__title {
+    font-size: 27px;
+    font-family: "MyriadPro-Bold";
+    text-decoration: underline;
+    color: #f5c109;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .pravul__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pravul__top > * {
+    width: calc(50% - 25px);
+  }
+
+  .pravul__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .pravul__bottom > * {
+    width: calc(50% - 25px);
+  }
+  .pravul__cfg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pravul__img {
+    width: 100px;
+  }
+  .pravul__destitle {
+    text-align: center;
+  }
+}
