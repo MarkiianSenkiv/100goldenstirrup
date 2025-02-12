@@ -1,5 +1,5 @@
 .intro {
-  background-image: url(/img/linear.png);
+  background-image: url(../img/linear.png);
   background-size: cover;
   background-position: 50% 50%;
   margin-top: -150px;
@@ -34,7 +34,7 @@
   }
 }
 
-.about {
+/* .about {
   padding: 20px 0;
   .about__des {
     display: flex;
@@ -88,7 +88,7 @@
     transform: translateY(-3px);
     transition: all 0.3s ease-in-out;
   }
-}
+} */
 .authors {
   background-color: #222222;
   padding: 20px 0px;
