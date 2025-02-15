@@ -9,7 +9,8 @@
     background-image: url(../img/ling-bg.svg);
     background-size: cover;
     background-position: 100% 50%;
-    min-height: 90vh;
+    height: 100vh;
+    
     .footer__block {
       position: relative;
       height: 400px;
