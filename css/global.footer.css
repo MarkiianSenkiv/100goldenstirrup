@@ -1,19 +1,16 @@
 .footer {
   position: relative;
   z-index: 1;
-
   .footer__container {
-    position: relative;
     border-radius: 70px 70px 0 0;
     background: rgba(0, 0, 0, 0.93);
     background-image: url(../img/ling-bg.svg);
     background-size: cover;
-    background-position: 100% 50%;
-    height: 100vh;
-    
+    background-position: center;
+    background-repeat: no-repeat;
     .footer__block {
       position: relative;
-      height: 400px;
+      min-height: 400px;
       padding: 30px;
 
       .footer__logo {
@@ -54,7 +51,7 @@
             .footer__text {
               text-decoration: none;
               transition: color 0.3s ease;
-              font-size: 15px;
+              font-size: 16px;
               line-height: 18px;
               color: #f5f5f5;
               &:hover {
@@ -80,7 +77,7 @@
         flex-direction: column;
         row-gap: 10px;
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 16px;
         .footer__socs {
           text-decoration: none;
           color: var(--main-color);
@@ -93,7 +90,7 @@
         top: 45px;
         left: 0;
         row-gap: 10px;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 18px;
         color: rgba(255, 255, 255, 0.3);
       }
@@ -101,8 +98,8 @@
         display: flex;
         justify-content: center;
         font-family: "MyriadPro-Bold";
-        font-size: 8.2vw;
-        margin: 90px -33px -38px -33px;
+        font-size: 8vw;
+        margin: 100px -55px -28px -55px;
         background: linear-gradient(-315deg, #f5c109, #f40d0d);
         background-clip: text;
         -webkit-text-fill-color: transparent;

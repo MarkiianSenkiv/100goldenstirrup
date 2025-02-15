@@ -19,8 +19,9 @@
         .intro__name {
           font-family: "MyriadPro-Bold";
           font-size: 50px;
-
-          color: var(--accent-orange);
+          background: linear-gradient(-315deg, #f5c109, #f40d0d);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         .intro__destitle {
           font-size: 20px;
