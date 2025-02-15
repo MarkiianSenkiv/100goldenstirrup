@@ -98,12 +98,11 @@
         display: flex;
         justify-content: center;
         font-family: "MyriadPro-Bold";
-        font-size: 8vw;
-        margin: 100px -55px -28px -55px;
+        font-size: 6.7vw;
+        margin: 100px 0 -28px 0;
         background: linear-gradient(-315deg, #f5c109, #f40d0d);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        --bg-size: 400%;
         transition: all 0.3sease;
         background-size: 250% 250%;
         animation: gradientAnimation 1s linear infinite alternate;
