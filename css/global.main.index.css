@@ -1,94 +1,64 @@
 .intro {
-  background-image: url(../img/linear.png);
-  background-size: cover;
-  background-position: 50% 50%;
-  margin-top: -150px;
+  border-radius: 0 0 90px 90px;
+  margin-top: -100px;
   .intro__background {
+    border-radius: 0 0 90px 90px;
     background: rgba(0, 0, 0, 0.93);
+    background-image: url(../img/ling-bg.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+
     .intro__container {
-      min-height: 105vh;
+      min-height: 90vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      .intro__ctg-left {
+      .intro__ctg {
         display: flex;
         flex-direction: column;
         .intro__name {
           font-family: "MyriadPro-Bold";
           font-size: 50px;
 
-          color: #f5c109;
+          color: var(--accent-orange);
         }
         .intro__destitle {
           font-size: 20px;
           color: #f5f5f5;
           padding-bottom: 70px;
         }
-        .intro__buttons {
+        .intro__cont-buttons {
           display: flex;
+          background-color: rgba(255, 255, 255, 0.07);
+          justify-content: initial;
+          align-items: initial;
+          flex-direction: column;
+          text-align: center;
+          row-gap: 20px;
+          border-radius: 10px;
+          width: 335px;
+          padding: 20px;
+          margin: 0 auto;
+          .intro__buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .intro__container {
+        .intro__container {
           flex-direction: row;
-          gap: 20px;
         }
       }
     }
   }
 }
 
-/* .about {
-  padding: 20px 0;
-  .about__des {
-    display: flex;
-  }
-  .about__ctg {
-    .about__title {
-      background-color: #f5f5f5;
-      font-size: 30px;
-      font-family: "MyriadPro-Bold", serif;
-      text-decoration: underline;
-      color: #f5c109;
-      padding-bottom: 10px;
-    }
-    .about__destitle {
-      font-size: 19px;
-      padding-bottom: 20px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .about__container {
-      display: flex;
-      flex: 1, 1, 50%;
-      gap: 10px;
-      .about__ctg {
-        align-items: center;
-
-        .about__title {
-          font-size: 35px;
-        }
-        .about__destitle {
-          font-size: 22px;
-        }
-      }
-    }
-    .about__portret {
-      width: 250px;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    .about__portret {
-      width: auto;
-      height: 350px;
-    }
-  }
-
-  .about__portret {
-    border-radius: 7%;
-    padding: 20px 0;
-  }
-  .about__portret:hover {
-    transform: translateY(-3px);
-    transition: all 0.3s ease-in-out;
-  }
-} */
 .authors {
   background-color: #222222;
   padding: 20px 0px;
@@ -148,7 +118,14 @@
   }
   @media screen and (min-width: 768px) {
     .authors__container {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .authors__container {
+      grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(1, 1fr);
       gap: 20px;
     }
@@ -249,6 +226,7 @@
 }
 
 .pravul {
+  padding: 20px 0px;
   .pravul__title {
     font-size: 27px;
     font-family: "MyriadPro-Bold";
@@ -257,29 +235,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px 0;
+    padding-bottom: 20px;
   }
   .pravul__top {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
+    gap: 1rem 5rem;
+    justify-content: space-evenly;
     justify-content: center;
-  }
-
-  .pravul__top > * {
-    width: calc(50% - 25px);
-  }
-
-  .pravul__bottom {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-  .pravul__bottom > * {
-    width: calc(50% - 25px);
   }
   .pravul__cfg {
     display: flex;
@@ -292,5 +255,10 @@
   }
   .pravul__destitle {
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    .pravul__top {
+      gap: 1rem 5rem;
+    }
   }
 }

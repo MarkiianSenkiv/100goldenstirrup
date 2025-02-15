@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <div class="header__off-screen-menu">
         <div class="header__menu">
           <div class="header__menu-left">
@@ -17,10 +17,14 @@
                 <a class="header__menu-link" href="#">Наш орден</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="./index.html#proorden">Про орден</a>
+                <a class="header__menu-link" href="./index.html#proorden"
+                  >Про орден</a
+                >
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Контакти</a>
+                <a class="header__menu-link" href="./index.html#provid"
+                  >Провід</a
+                >
               </li>
             </ul>
           </div>
@@ -46,22 +50,6 @@
           </div>
         </div>
         <div class="header__bottom">
-          <div class="header__buttons">
-            <a
-              class="header__btn button"
-              href="join.html"
-              target="_blank"
-              aria-label="Join me"
-              >Приєднатися</a
-            >
-            <a
-              class="header__btn button"
-              href=""
-              target="_blank"
-              aria-label="Join me"
-              >Підтримати</a
-            >
-          </div>
           <div class="header__socs">
             <a href="https://www.facebook.com/groups/189924784483205">
               <svg
@@ -115,8 +103,9 @@
       </div>
 
       <nav class="header__nav">
-        <img src="./img/logo.png" class="header__nav-logo" alt="Logo" />
-
+        <a href="/index.html">
+          <img src="./img/logo.png" class="header__nav-logo" alt="Logo" />
+        </a>
         <div class="header__nav-hamenu">
           <span></span>
           <span></span>
@@ -125,13 +114,13 @@
       </nav>
     </header>
     <main>
-      <section class="intro">
+      <section class="intro container">
         <div class="intro__background">
-          <div class="intro__container container">
+          <div class="intro__container container__center">
             <div class="intro__ctg">
-              <div class="intro__ctg-left">
-                <h1 class="intro__name">ОРДЕН ЗОЛОТОГО СТРЕМЕНА</h1>
-                <p class="intro__destitle">Курені : ч.100 - УСП ч.7 – УПС</p>
+              <h1 class="intro__name">ОРДЕН ЗОЛОТОГО СТРЕМЕНА</h1>
+              <p class="intro__destitle">Курені : ч.100 - УСП ч.7 – УПС</p>
+              <div class="intro__cont-buttons">
                 <div class="intro__buttons">
                   <a
                     class="intro__btn button"
@@ -144,49 +133,15 @@
                     class="intro__btn button"
                     href=""
                     target="_blank"
-                    aria-label="Join me"
+                    aria-label="Support me"
                     >Підтримати</a
                   >
                 </div>
               </div>
-              <div class="intro__ctg-right"></div>
             </div>
           </div>
         </div>
       </section>
-      <!-- <section class="about">
-        <div class="about__container container">
-          <div class="about__ctg">
-            <h2 class="about__title">Патрон Ордену Золотого Стремена</h2>
-            <p class="about__destitle">
-              Небіж та спадкоємець гетьмана Івана Мазепи. Осавул Війська
-              Запорозького. Власник великих маєтностей на Лівобережній Україні,
-              довірена особа гетьмана, активний учасник його антимосковських
-              дій. 1710 – 1711 – Разом з Пилипом Орликом заохочував уряди
-              Османської імперії, Кримського ханства та ряду європейських країн
-              до війни з Московським царством, та намагалися утворити
-              антимосковську коаліцію європейських держав. За наказом Петра I
-              Войнаровського в 1716 році силою захопив і викрав московський
-              консул у Гамбурзі (Німеччина) і відправив до Петербургу, хоча
-              Войнаровський ніколи не був московським підданим. До 1723 року
-              перебував в ув’язненні у Петропавлівській фортеці. Звідси його
-              заслали до Якутська , де він і помер у 1740 році.
-            </p>
-            <a
-              class="autors__btn button"
-              href="https://uk.wikipedia.org/wiki/%D0%86%D0%B2%D0%B0%D0%BD_%D0%9C%D0%B0%D0%B7%D0%B5%D0%BF%D0%B0"
-              target="_blank"
-              aria-label="Join me"
-              >Дізнатися більше</a
-            >
-          </div>
-          <img
-            class="about__portret"
-            src="./img/portret-mazepa.jpg"
-            alt="Portret Mazepa"
-          />
-        </div>
-      </section> -->
       <section class="details" id="proorden">
         <h2 class="details__title">Про орден</h2>
         <div class="details__container container">
@@ -322,15 +277,9 @@
           </div>
         </div>
       </section>
-
-      <section class="photo">
-        <div class="photo__container container">
-          <img src="" alt="" />
-        </div>
-      </section>
-      <section class="authors">
+      <section class="authors" id="provid">
         <h2 class="authors__title">Провід ордену</h2>
-        <div class="authors__container container">
+        <div class="authors__container container__center">
           <div class="authors__avart">
             <img
               class="authors__img"
@@ -449,7 +398,65 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer container">
+      <div class="footer__container">
+        <div class="footer__block">
+          <img src="./img/logo.png" class="footer__logo" alt="Logo Orden" />
+          <div class="footer__list">
+            <div class="footer__column">
+              <div class="footer__title">Навігація по сайту:</div>
+              <div class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a href aria-current="page" class="footer__text">Головна</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href aria-current="page" class="footer__text">Головна</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href aria-current="page" class="footer__text">Головна</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href aria-current="page" class="footer__text">Головна</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href aria-current="page" class="footer__text">Головна</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href aria-current="page" class="footer__text">Головна</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__column">
+              <div class="footer__title">Зв'язатись з нами:</div>
+              <div class="footer__connect">
+                <a href="" class="footer__info">+380666666666</a>
+                <a href="" class="footer__info">info@100goldenstirrup.org.ua</a>
+              </div>
+            </div>
+            <div class="footer__column">
+              <div class="footer__title">Соц. мережі:</div>
+              <div class="footer__social">
+                <a href="" class="footer__socs">Instagram</a>
+                <a href="" class="footer__socs">Facebook</a>
+                <a href="" class="footer__socs">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <span>Goldenstirrup by Plast</span>
+            <a href="#" target="_blank" class="footer__text"
+              >Політика конфіденційності</a
+            >
+            <div class="footer__dev">
+              <a href="#" target="_blank" class="footer__text">Developed by Markiian Senkiv</a>
+            </div>
+          </div>
+          <a href="#" class="footer__word">Орден золотого стремена</a>
+        </div>
+      </div>
+    </footer>
     <script src="./js/index.js"></script>
   </body>
 </html>

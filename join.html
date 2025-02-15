@@ -20,7 +20,7 @@
                 <a class="header__menu-link" href="#">Про Пласт</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Контакти</a>
+                <a class="header__menu-link" href="#">Провід</a>
               </li>
             </ul>
           </div>
@@ -46,22 +46,6 @@
           </div>
         </div>
         <div class="header__bottom">
-          <div class="header__buttons">
-            <a
-              class="header__btn button"
-              href="join.html"
-              target="_blank"
-              aria-label="Join me"
-              >Приєднатися</a
-            >
-            <a
-              class="header__btn button"
-              href=""
-              target="_blank"
-              aria-label="Join me"
-              >Підтримати</a
-            >
-          </div>
           <div class="header__socs">
             <svg
               class="header__socs-icon"
@@ -115,7 +99,6 @@
         <a href="/index.html">
           <img src="./img/logo.png" class="header__nav-logo" alt="Logo" />
         </a>
-
         <div class="header__nav-hamenu">
           <span></span>
           <span></span>
@@ -124,45 +107,98 @@
       </nav>
     </header>
     <main>
-      <form class="feedback__form" method="POST">
-        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-        <input
-          class="feedback__input"
-          type="text"
-          name="surname"
-          placeholder="прізвище"
-          required
-        />
-        <input
-          class="feedback__input"
-          type="text"
-          name="name"
-          placeholder="Ім'я"
-          required
-        />
-        <input
-          class="feedback__input"
-          type="phone"
-          name="phone"
-          placeholder="Телефон"
-          required
-        />
-        <input
-          class="feedback__input"
-          type="email"
-          name="email"
-          placeholder="Пошта"
-          required
-        />
-        <input
-          class="feedback__input"
-          type="data"
-          name="data"
-          placeholder="Дата народження"
-          required
-        />
-        <button class="feedback__button button" type="submit">Надсилати</button>
-      </form>
+      <section class="intro container">
+        <div class="intro__background">
+          <div class="intro__container"></div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__container container__center">
+          <h2 class="feedback__title">Приєднання до ордену</h2>
+          <p class="feedback__destitle">
+            Долучіться до обраних та станьте частиною великого братерства.
+            Пройдіть випробування та доведіть свою відданість.
+          </p>
+          <form class="feedback__form" method="POST">
+            <div class="feedback__column">
+              <div class="feedback__div">
+                <input
+                  class="feedback__input"
+                  type="text"
+                  name="surname"
+                  placeholder="Прізвище"
+                  required
+                />
+              </div>
+              <div class="feedback__div">
+                <input
+                  class="feedback__input"
+                  type="text"
+                  name="name"
+                  placeholder="Ім'я"
+                  required
+                />
+              </div>
+              <div class="feedback__div">
+                <input
+                  class="feedback__input"
+                  type="phone"
+                  name="phone"
+                  placeholder="Телефон"
+                  required
+                />
+              </div>
+              <div class="feedback__div">
+                <input
+                  class="feedback__input"
+                  type="email"
+                  name="email"
+                  placeholder="Пошта"
+                  required
+                />
+              </div>
+            </div>
+            <div class="feedback__column">
+              <div class="feedback__div">
+                <input
+                  class="feedback__input"
+                  type="data"
+                  name="data"
+                  placeholder="Дата народження"
+                  required
+                />
+              </div>
+              <div class="feedback__div">
+                <textarea
+                  name="comment"
+                  type="text"
+                  placeholder="Що ти очікуєш від перебування в Ордену?"
+                  spellcheck="false"
+                ></textarea>
+              </div>
+              <div class="feedback__div">
+                <span id="btn_form_send" class="feedback__btn">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"
+                      fill="#080341"
+                    />
+                  </svg>
+                  <span>Надсилати заявку</span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <script src="./js/index.js"></script>
   </body>

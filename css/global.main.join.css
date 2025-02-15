@@ -1,0 +1,107 @@
+.intro {
+  border-radius: 0 0 90px 90px;
+  margin-top: -150px;
+  .intro__background {
+    border-radius: 0 0 90px 90px;
+    background: rgba(0, 0, 0, 0.93);
+    background-image: url(../img/ling-bg.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+
+    .intro__container {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.feedback {
+  padding: 0px 15px;
+  .feedback__container {
+    margin-top: -30rem;
+    padding: 70px 0;
+    border-radius: 40px;
+    background: var(--accent-orange);
+    .feedback__title {
+      margin-right: 0;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      font-family: "MyriadPro-Bold";
+      color: var(--bg-black-alfa);
+    }
+    .feedback__destitle {
+      margin: 26px 0;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0 20px;
+      color: var(--bg-black-alfa);
+    }
+    .feedback__form {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+      .feedback__column {
+        width: 100%;
+        padding: 0 10px;
+        margin: -5px 0;
+        .feedback__div {
+          position: relative;
+          margin: 10px;
+        }
+        .feedback__div input[type="text"],
+        .feedback__div input[type="phone"],
+        .feedback__div input[type="email"],
+        .feedback__div input[type="data"],
+        .feedback__div textarea {
+          padding: 20px;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 22px;
+          color: rgba(18, 18, 18, 1);
+          border: none;
+          background-color: #ffffff;
+          border-radius: 15px;
+        }
+        .feedback__btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 20px;
+          font-size: 15px;
+          line-height: 22px;
+          border: none;
+          background: linear-gradient(-315deg, #f5c109, #f40d0d);
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+  overflow: auto;
+}
+
+.feedback__div input,
+.feedback__div textarea {
+  display: block;
+  width: 100%;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: transparent;
+}
