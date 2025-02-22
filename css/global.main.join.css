@@ -1,26 +1,28 @@
 .intro {
   border-radius: 0 0 90px 90px;
-  margin-top: -150px;
+  margin-top: -110px;
   .intro__background {
     border-radius: 0 0 90px 90px;
     background: rgba(0, 0, 0, 0.93);
-    background-image: url(../img/ling-bg.svg);
+    background-image: url(../img/ling-bg-bottom.svg);
     background-size: cover;
     background-position: 50% 50%;
-
     .intro__container {
-      min-height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      min-height: 45vh;
+    }
+    @media screen and (min-width: 768px) {
+      .intro__container {
+        flex-direction: row;
+      }
     }
   }
 }
 
 .feedback {
+  margin-top: -200px;
   padding: 0px 15px;
+  margin-bottom: 50px;
   .feedback__container {
-    margin-top: -30rem;
     padding: 70px 0;
     border-radius: 40px;
     background: var(--accent-orange);
@@ -73,6 +75,7 @@
           text-align: center;
           padding: 20px;
           font-size: 15px;
+          font-family: "MyriadPro-Bold";
           line-height: 22px;
           border: none;
           background: linear-gradient(-315deg, #f5c109, #f40d0d);

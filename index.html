@@ -6,6 +6,11 @@
     <title>100 Орден Золотого Стремена</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -34,7 +39,7 @@
                 <a class="header__menu-link" href="#">Фото</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Історія</a>
+                <a class="header__menu-link" href="./history.html">Історія</a>
               </li>
             </ul>
           </div>
@@ -101,7 +106,6 @@
           </div>
         </div>
       </div>
-
       <nav class="header__nav">
         <a href="/index.html">
           <img src="./img/logo.png" class="header__nav-logo" alt="Logo" />
@@ -114,6 +118,33 @@
       </nav>
     </header>
     <main>
+      <section class="popup">
+        <div class="popup__box">
+          <div class="popup__wrap">
+            <p class="popup__title">
+              Вітаємо на сайті Пласту – курінь Орден Золотого Стремена!
+            </p>
+            <p class="popup__destitle">
+              Долучайся до нашої спільноти, відкривай нові пригоди та зростай
+              разом із пластунами!
+            </p>
+            <p class="popup__join">
+              Хочеш приєднатися? Натисни кнопку нижче та стань частиною великої
+              пластової родини!
+            </p>
+            <a
+              class="popup__btn button"
+              href="join.html"
+              target="_blank"
+              aria-label="Join me"
+              >Приєднатися</a
+            >
+          </div>
+          <div class="popup__clone">
+            <img src="./img/icon-clone.svg" alt="Clone" />
+          </div>
+        </div>
+      </section>
       <section class="intro container">
         <div class="intro__background">
           <div class="intro__container container__center">
@@ -144,7 +175,7 @@
       </section>
       <section class="details" id="proorden">
         <h2 class="details__title">Про орден</h2>
-        <div class="details__container container">
+        <div class="details__container container__center">
           <div class="details__con-row">
             <div class="details__left">
               <div class="details__categories">
@@ -283,57 +314,79 @@
           <div class="authors__avart">
             <img
               class="authors__img"
-              src="./img/petro.jpg"
+              src="./img/user.png"
               alt="Authors Petro"
             />
-            <p class="authors__name">Петро Прийма</p>
-            <p class="authors__wire">Куріний</p>
+            <p class="authors__name">Любомир Данилів</p>
+            <p class="authors__wire">Великий Магістр Ордену</p>
           </div>
-          <div class="authors__avart">
+          <div class="authors__avart avart__lg">
             <img
               class="authors__img"
-              src="./img/andrii.jpg"
+              src="./img/user.png"
               alt="Authors Anrii"
             />
-            <p class="authors__name">Андрій Драган</p>
-            <p class="authors__wire">Заступник куріного</p>
+            <p class="authors__name">Андрій Савчин</p>
+            <p class="authors__wire">Курінний 7-го куреня УПС</p>
           </div>
           <div class="authors__avart">
             <img
               class="authors__img"
-              src="./img/petro.jpg"
+              src="./img/user.png"
               alt="Authors Petro"
             />
-            <p class="authors__name">Ім'я</p>
-            <p class="authors__wire">Писар</p>
+            <p class="authors__name">Марта Павлюк</p>
+            <p class="authors__wire">Курінна 100-го куреня УСП</p>
           </div>
 
-          <div class="authors__avart">
+          <div class="authors__avart avart__lg">
             <img
               class="authors__img"
-              src="./img/petro.jpg"
+              src="./img/user.png"
               alt="Authors Petro"
             />
-            <p class="authors__name">Ім'я</p>
-            <p class="authors__wire">Заступник куріний</p>
+            <p class="authors__name">Адріана Вінтоняк</p>
+            <p class="authors__wire">Великий Тризорій Ордену та Писар</p>
           </div>
           <div class="authors__avart">
             <img
               class="authors__img"
-              src="./img/petro.jpg"
+              src="./img/user.png"
               alt="Authors Petro"
             />
-            <p class="authors__name">Ім'я</p>
-            <p class="authors__wire">Куріний</p>
+            <p class="authors__name">Оксана Стефанів</p>
+            <p class="authors__wire">PR-менеджер</p>
           </div>
-          <div class="authors__avart">
-            <img
-              class="authors__img"
-              src="./img/petro.jpg"
-              alt="Authors Petro"
-            />
-            <p class="authors__name">Ім'я</p>
-            <p class="authors__wire">Куріний</p>
+        </div>
+      </section>
+      <section class="way">
+        <div class="way__container container__center">
+          <h2 class="way__title">Наша цілі</h2>
+          <div class="way__block">
+            <div class="way__step way__step-1">
+              <div class="way__text">
+                Горіти любов’ю до Батьківщини й бути амбасадором України на
+                чужині.
+              </div>
+            </div>
+            <div class="way__step way__step-2">
+              <div class="way__text">
+                Стояти на сторожі чистоти пластової ідеології і бути прикладом
+                пластової постави символом цього є ”Золоте стрем’я”.
+              </div>
+            </div>
+            <div class="way__step way__step-3">
+              <div class="way__text">Плекати пластову дружбу й зв’язки поміж членами Куреня.</div>
+            </div>
+            <div class="way__step way__step-4">
+              <div class="way__text">Здійснюючи ідеї Куреня,  застосовувати принцип Родини.</div>
+            </div>
+            <div class="way__step way__step-5">
+              <div class="way__text">Бути активним в Пласті і в українській Громаді.</div>
+            </div>
+            <div class="way__step way__step-6">
+              <div class="way__text">Продовжувати самовиховання.</div>
+            </div>
           </div>
         </div>
       </section>
@@ -376,25 +429,93 @@
               <p class="pravul__destitle">Лицар</p>
             </div>
           </div>
-          <!-- <h2 class="pravul__title">Курінні відзнаки нашивки куреня УПС ч.7</h2>
-          <div class="pravul__bottom">
-            <div class="pravul__cfg">
-              <img
-                class="pravul__img"
-                src="./img/favicon1.png"
-                alt="Fachion Pravul 1"
-              />
-              <p class="pravul__destitle">Привид</p>
+        </div>
+      </section>
+      <section class="faq container__center">
+        <h2 class="faq_title">Поширеніші питання</h2>
+        <div class="faq__container">
+          <div class="faq__item">
+            <div class="faq__item-question js-faq">
+              Що таке курінь Ордену Золотого Стремена?
             </div>
-            <div class="pravul__cfg">
-              <img
-                class="pravul__img"
-                src="./img/logo.png"
-                alt="Fachion Pravul 2"
-              />
-              <p class="pravul__destitle">Лицар</p>
+            <div class="faq__item-answer">
+              Пласт курінь Ордену Золотого Стремена – це частина організації
+              «Пласт», що об’єднує членів з певними цілями та ідеалами. Курінь є
+              своєрідною групою в рамках Пласту, орієнтованою на підтримку
+              честі, служіння, розвитку молоді та патріотизму.
             </div>
-          </div> -->
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question js-faq">
+              Як виник курінь Ордену Золотого Стремена?
+            </div>
+            <div class="faq__item-answer">
+              Пласт курінь Ордену Золотого Стремена був заснований як частина
+              українського пластового руху для забезпечення морального і
+              фізичного розвитку молоді та виховання у них патріотичних
+              почуттів. Його діяльність була зосереджена на підтримці духовних
+              та фізичних принципів, важливих для української нації.
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question js-faq">
+              Які завдання стоять перед пластовим куренем Ордену Золотого
+              Стремена?
+            </div>
+            <div class="faq__item-answer">
+              Основними завданнями є виховання молоді в дусі патріотизму,
+              моральних принципів, фізичної підготовки, а також надання молодим
+              людям можливості для участі в національних та соціальних проектах.
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question js-faq">
+              Як стати членом пластового куреня Ордену Золотого Стремена?
+            </div>
+            <div class="faq__item-answer">
+              Щоб стати частиною нашої спільноти, подай заяву на вступ та свій
+              життєпис, після чого тобі буде призначено Тітку/Дядька з числа
+              повноправних членів Куреня, який допоможе розібратися у всіх
+              питаннях. Ти отримаєш правильник Куреня — прочитай його уважно.
+              Познайомся з усіма членами Куреня в Україні та, за можливості, за
+              кордоном. Пам'ятай, що на момент вступу ти повинен мати ступінь
+              дійсного члена Пласту, хоча представники новостворених осередків
+              можуть бути винятком.
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question js-faq">
+              Яка діяльність пластового куреня Ордену Золотого Стремена?
+            </div>
+            <div class="faq__item-answer">
+              Курінь активно займається проведенням різноманітних виховних
+              заходів, таборів, навчальних програм і патріотичних акцій. Це
+              включає спортивні змагання, культурні заходи, екологічні та
+              волонтерські проекти.
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question js-faq">
+              Які символи використовує пластовий курінь Ордену Золотого
+              Стремена?
+            </div>
+            <div class="faq__item-answer">
+              Символами є Золоте Стремено, яке символізує шлях до честі, а також
+              герб куреня, що може бути варіативним залежно від підрозділу або
+              місцевої групи.
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-question js-faq">
+              Яке значення має Орден Золотого Стремена в сучасному суспільстві?
+            </div>
+            <div class="faq__item-answer">
+              Орден Золотого Стремена має значення як символ служіння своїй
+              країні, патріотизму та відданості справам розвитку національної
+              ідентичності та моральності. Він є частиною ширшого руху виховання
+              молоді на основі духовних та патріотичних цінностей.
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -437,7 +558,12 @@
             <div class="footer__column">
               <div class="footer__title">Зв'язатись з нами:</div>
               <div class="footer__connect">
-                <a href="" class="footer__info">+380666666666</a>
+                <a href="" class="footer__info"
+                  >УСП - +380666850290 (ст.пл. Марта Павлюк)</a
+                >
+                <a href="" class="footer__info"
+                  >УПС - +380992864278 (пл.сен.пр. Андрій Савчин)</a
+                >
                 <a href="" class="footer__info">info@100goldenstirrup.org.ua</a>
               </div>
             </div>
@@ -465,6 +591,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/burger-menu.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

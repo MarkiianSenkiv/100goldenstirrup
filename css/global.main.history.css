@@ -1,0 +1,56 @@
+.intro {
+  border-radius: 0 0 90px 90px;
+  margin-top: -110px;
+  .intro__background {
+    border-radius: 0 0 90px 90px;
+    background: rgba(0, 0, 0, 0.93);
+    background-image: url(../img/ling-bg-bottom.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+    .intro__container {
+      min-height: 45vh;
+    }
+    @media screen and (min-width: 768px) {
+      .intro__container {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+.history {
+  margin-top: -200px;
+  .history__container {
+    padding: 40px 0;
+    .history__name {
+      font-family: "MyriadPro-Bold";
+      text-decoration: underline;
+      color: #f5c109;
+      text-align: center;
+      font-size: 30px;
+      padding-bottom: 30px;
+    }
+    .history__cfg {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      row-gap: 10px;
+      .history__potret {
+        width: 100%;
+        .history__image {
+          border-radius: 20px;
+        }
+      }
+      .header__text {
+        width: 100%;
+      }
+    }
+  }
+}
+.history__title {
+  text-align: start;
+}
+.history__destitle {
+  font-size: 17px;
+  row-gap: 20px;
+}

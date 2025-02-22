@@ -12,7 +12,6 @@
       position: relative;
       min-height: 400px;
       padding: 30px;
-
       .footer__logo {
         display: block;
         position: relative;
@@ -47,7 +46,6 @@
           .footer__menu-item {
             width: 50%;
             text-decoration: none;
-
             .footer__text {
               text-decoration: none;
               transition: color 0.3s ease;
@@ -64,12 +62,14 @@
       .footer__connect {
         display: flex;
         flex-direction: column;
+        row-gap: 10px;
         font-size: 15px;
         line-height: 18px;
         margin-top: 20px;
         .footer__info {
           text-decoration: none;
           color: #f5f5f5;
+          
         }
       }
       .footer__social {
@@ -90,7 +90,7 @@
         top: 45px;
         left: 0;
         row-gap: 10px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 18px;
         color: rgba(255, 255, 255, 0.3);
       }
@@ -98,8 +98,9 @@
         display: flex;
         justify-content: center;
         font-family: "MyriadPro-Bold";
-        font-size: 6.7vw;
-        margin: 100px 0 -28px 0;
+        font-size: 6vw;
+        text-transform: uppercase;
+        margin: 100px 0 -20px 0;
         background: linear-gradient(-315deg, #f5c109, #f40d0d);
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -114,6 +115,28 @@
         100% {
           background-position: 100% 50%;
         }
+      }
+      @media screen and (min-width: 768px) {
+        .footer__list {
+          flex-direction: row;
+          justify-content: flex-end;
+          column-gap: 90px;
+          margin-top: -40px;
+        }
+      }
+      @media screen and (min-width: 1080px) {
+        .footer__copyright {
+          position: absolute;
+          top: 175px;
+          left: 70px;
+          row-gap: 10px;
+          line-height: 18px;
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .footer__block {
+        padding: 70px;
       }
     }
   }
