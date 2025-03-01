@@ -13,7 +13,7 @@ jQuery(function ($) {
   function showPopup() {
     if (!popupOpened) {
       popupOpened = true;
-      $(".popup").fadeIn(700);
+      $(".popup").fadeIn(1000);
       $("html").addClass("no-scroll");
       sessionStorage.setItem("popupOnce", "true");
       localStorage.setItem("popupTime", now);
