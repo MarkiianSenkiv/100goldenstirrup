@@ -1,6 +1,5 @@
 .intro {
   border-radius: 0 0 90px 90px;
-  margin-top: -110px;
   .intro__background {
     border-radius: 0 0 90px 90px;
     background: rgba(0, 0, 0, 0.93);
@@ -45,6 +44,34 @@
         width: 100%;
       }
     }
+    @media screen and (min-width: 768px) {
+      .history__cfg {
+        flex-direction: row;
+        gap: 70px;
+        .history__potret {
+          margin-left: 50px;
+        }
+        .header__text {
+          margin-top: 30px;
+        }
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      .history__cfg {
+        flex-direction: row;
+        gap: 70px;
+        .history__potret {
+          margin-left: 90px;
+          .history__image {
+            width: 70%;
+          }
+        }
+        .header__text {
+          margin-top: 90px;
+          margin-left: -130px;
+        }
+      }
+    }
   }
 }
 .history__title {
@@ -53,4 +80,9 @@
 .history__destitle {
   font-size: 17px;
   row-gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .history__image {
+    width: 100%;
+  }
 }

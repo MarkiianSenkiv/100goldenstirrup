@@ -34,7 +34,7 @@ jQuery(function ($) {
 });
 
 function onSubmitPopupHandler(el) {
-  jQuery(".popup").fadeOut(300);
+  jQuery(".popup").fadeOut(2000);
   localStorage.setItem("popupDisable", "true");
   iqbClickHandler(el);
   return false;

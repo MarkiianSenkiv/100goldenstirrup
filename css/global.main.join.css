@@ -1,6 +1,5 @@
 .intro {
   border-radius: 0 0 90px 90px;
-  margin-top: -110px;
   .intro__background {
     border-radius: 0 0 90px 90px;
     background: rgba(0, 0, 0, 0.93);
@@ -44,6 +43,7 @@
     }
     .feedback__form {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       margin: 0 -10px;
       .feedback__column {
