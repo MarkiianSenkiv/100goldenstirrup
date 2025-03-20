@@ -1,0 +1,233 @@
+.intro {
+  border-radius: 0 0 90px 90px;
+  .intro__background {
+    border-radius: 0 0 90px 90px;
+    background: rgba(0, 0, 0, 0.93);
+    background-image: url(../img/ling-bg-bottom.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+    .intro__container {
+      min-height: 45vh;
+    }
+    @media screen and (min-width: 768px) {
+      .intro__container {
+        flex-direction: row;
+      }
+    }
+  }
+}
+.info {
+  margin-top: -200px;
+  .info__container {
+    display: flex;
+    flex-direction: column;
+    .info__list {
+      .info__title {
+        font-family: "MyriadPro-Bold";
+        text-decoration: underline;
+        color: #f5c109;
+        text-align: center;
+        font-size: 30px;
+      }
+      .info__destitle {
+        font-size: 20px;
+        row-gap: 20px;
+        text-align: center;
+        color: #fff;
+        padding-bottom: 30px;
+      }
+    }
+    .info__image {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .info__container {
+      flex-direction: row;
+      .info__image {
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.history {
+  .history__destitle {
+    font-size: 17px;
+  }
+}
+.way__container {
+  padding-bottom: 20px;
+  .way__destitle {
+    font-size: 18px;
+    row-gap: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .way__step {
+    display: flex;
+    position: relative;
+    width: 250px;
+    padding: 10px;
+    border-radius: 23px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-align: start;
+    border: 3px solid #35352f;
+    background-color: rgba(190, 196, 131, 0.07);
+    margin: 0 auto;
+    z-index: 2;
+    .way__text {
+      font-size: 19px;
+      .way__name {
+        font-family: "MyriadPro-Bold";
+
+        font-size: 20px;
+        color: #f5c109;
+      }
+    }
+  }
+  .way__step-1 {
+    top: 0;
+    left: 20px;
+    right: 0;
+    transform: rotate(-2deg);
+  }
+  .way__step-2,
+  .way__step-4,
+  .way__step-6 {
+    top: 0;
+    left: -30px;
+    right: 0;
+    margin-top: 29px;
+    transform: rotate(3deg);
+  }
+  .way__step-3,
+  .way__step-5 {
+    top: 0;
+    left: 30px;
+    right: 0;
+    margin-top: 27px;
+    transform: rotate(-2deg);
+  }
+  @media screen and (min-width: 768px) {
+    .way__step {
+      width: 250px;
+      height: auto;
+    }
+    .way__step-1,
+    .way__step-2,
+    .way__step-3,
+    .way__step-4,
+    .way__step-5,
+    .way__step-6 {
+      top: 0;
+      left: 0;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .way__step {
+      width: 300px;
+      height: auto;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .way__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .way__block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+.gallery {
+  margin-bottom: 50px;
+  .gallery__destitle {
+    font-size: 18px;
+    row-gap: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .gallery__list img {
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery__list img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.fullscreen .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.joinzvytyaha {
+  padding: 30px;
+  .joinzvytyaha__container {
+    background-color: #f5c109;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    .joinzvytyaha__title {
+      color: #fff;
+      text-align: start;
+    }
+    .joinzvytyaha__destitle {
+      font-size: 18px;
+      color: #35352f;
+      padding-bottom: 25px;
+    }
+  }
+}
