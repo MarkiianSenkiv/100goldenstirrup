@@ -1,5 +1,6 @@
 const hamMenu = document.querySelector(".header__nav-hamenu");
 const offScreenMenu = document.querySelector(".header__off-screen-menu");
+const menuLinks = document.querySelectorAll(".header__menu-link");
 
 hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("active");
@@ -16,6 +17,20 @@ hamMenu.addEventListener("click", () => {
       nav.style.backgroundColor = "transparent";
     }
   }
+});
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamMenu.classList.remove("active");
+    offScreenMenu.classList.remove("active");
+
+    const nav = document.querySelector(".header__nav");
+    if (window.scrollY > 2) {
+      nav.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    } else {
+      nav.style.backgroundColor = "transparent";
+    }
+  });
 });
 
 document.addEventListener("scroll", () => {
