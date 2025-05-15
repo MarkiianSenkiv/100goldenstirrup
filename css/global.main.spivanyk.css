@@ -51,6 +51,7 @@
 }
 .spivanyk__buttons a {
   text-decoration: none;
+  border: 2px solid black;
 
   color: black;
   text-align: center;
