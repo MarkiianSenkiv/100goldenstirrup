@@ -129,12 +129,13 @@
             Долучіться до обраних та станьте частиною великого братерства.
             Пройдіть випробування та доведіть свою відданість.
           </p>
-          <form class="feedback__form" method="POST">
+          <form class="feedback__form">
             <div class="feedback__column">
               <div class="feedback__div">
                 <input
                   class="feedback__input"
                   type="text"
+                  id="surname"
                   name="surname"
                   placeholder="Прізвище"
                   required
@@ -144,6 +145,7 @@
                 <input
                   class="feedback__input"
                   type="text"
+                  id="name"
                   name="name"
                   placeholder="Ім'я"
                   required
@@ -152,7 +154,8 @@
               <div class="feedback__div">
                 <input
                   class="feedback__input"
-                  type="phone"
+                  type="tel"
+                  id="phone"
                   name="phone"
                   placeholder="Телефон"
                   required
@@ -162,6 +165,7 @@
                 <input
                   class="feedback__input"
                   type="email"
+                  id="email"
                   name="email"
                   placeholder="Пошта"
                   required
@@ -173,7 +177,8 @@
                 <input
                   class="feedback__input"
                   type="data"
-                  name="data"
+                  id="date"
+                  name="date"
                   placeholder="Дата народження"
                   required
                 />
@@ -181,7 +186,8 @@
               <div class="feedback__div">
                 <textarea
                   name="comment"
-                  type="text"
+                  id="comment"
+                  type="comment"
                   placeholder="Що ти очікуєш від перебування в Ордені?"
                   spellcheck="false"
                 ></textarea>
@@ -202,8 +208,11 @@
                       fill="#080341"
                     />
                   </svg>
-                  <span>Надсилати заявку</span>
+                  <div id="btn_form_send" class="feedback__submit">
+                    Надіслати заявку
+                  </div>
                 </span>
+                <div class="feedback__notification" id="notification"></div>
               </div>
             </div>
           </form>
@@ -282,5 +291,6 @@
       </div>
     </footer>
     <script src="./js/burger-menu.js"></script>
+    <script src="./js/sendmessage.js"></script>
   </body>
 </html>

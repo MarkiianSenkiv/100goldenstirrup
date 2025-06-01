@@ -55,7 +55,7 @@
           margin: 10px;
         }
         .feedback__div input[type="text"],
-        .feedback__div input[type="phone"],
+        .feedback__div input[type="tel"],
         .feedback__div input[type="email"],
         .feedback__div input[type="data"],
         .feedback__div textarea {
